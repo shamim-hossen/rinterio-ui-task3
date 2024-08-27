@@ -1,66 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
     <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Assignment 3</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 3</title>
 
-    <!-- font-awesome cdn link -->
-    <link
+        <!-- font-awesome cdn link -->
+        <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
-    />
+        />
 
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
         rel="stylesheet"
-    />
+        />
 
-    <!-- tailwind-css and daisy-ui -->
-    <link
+        <!-- tailwind-css and daisy-ui -->
+        <link
         href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
         rel="stylesheet"
         type="text/css"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- tailwind-css configuration -->
-    <script>
-    tailwind.config = {
-        theme: {
-        extend: {
-            colors: {
-            clifford: "#da373d",
-            'green-light': '#ABEF5F',
-            'gray-dark': '#737373',
-            },
-            fontFamily: {
+        <!-- tailwind-css configuration -->
+        <script>
+        tailwind.config = {
+            theme: {
+            extend: {
+                colors: {
+                clifford: "#da373d",
+                "green-light": "#ABEF5F",
+                "gray-dark": "#737373",
+                },
+                fontFamily: {
                 manrope: "Manrope",
+                },
+                backgroundImage: {
+                "form-pattern": "url('./assets/bg.jpg')",
+                },
             },
-            backgroundImage: {
-                'form-pattern': "url('./assets/bg.jpg')",
             },
-        },
-        },
-    };
-    </script>
-
+        };
+        </script>
     </head>
 
     <body class="font-manrope">
 
-    <h1 class="bg-form-pattern">Lorem ipsum dolor test</h1>
+        <!-- Header Section -->
+        <header class="bg-gradient-to-b from-[#FFFFFF] to-[#FFFFFF00] pt-5 pb-20">
+            <div class="navbar container max-w-screen-xl mx-auto pr-5">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost font-extrabold text-4xl">
+                        <i class="fa-solid fa-arrow-right text-xl -rotate-45 bg-green-light h-10 w-10 pt-1 rounded-full"></i>
+                        Rinterio
+                    </a>
+                </div>
+                <div class="hidden navbar-center lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base text-gray-dark">
+                        <li><a class="font-bold">Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex gap-3">
+                <div class="hidden lg:flex gap-3">
+                    <button class="btn btn-ghost btn-sm btn-circle h-10 w-10 bg-white">
+                        <i class="bg-slate-100 w-10 h-10 flex items-center justify-center rounded-full fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn btn-ghost btn-sm btn-circle h-10 w-10 bg-white">
+                        <i class="bg-slate-100 w-10 h-10 flex items-center justify-center rounded-full fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <a class="btn border-none rounded-full bg-green-light text-lg font-bold">
+                        Book Consult
+                        <i class="fa-solid fa-arrow-right text-sm -rotate-45 bg-[#1C1C1C] text-white h-6 w-6 pt-0.5 rounded-full"></i
+                    ></a>
+                </div>
+                <div class="dropdown relative">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-sm btn-circle bg-white h-10 w-10 lg:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+        <!-- banner -->
+        <div class="container max-w-screen-xl mx-auto flex flex-col justify-center items-center pt-10 space-y-6">
+            <img src="./assets/banner.png" alt="" class="w-[75%] lg:w-[45%]"/>
+            <div class="flex flex-col justify-center items-center text-center w-[85%] lg:w-[90%] gap-6">
+            <h1 class="text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+            <p class="text-gray-dark w-[95%] lg:w-[80%] font-medium text-sm">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <a class="btn border-none bg-[#ABEF5F80] text-lg font-bold w-full rounded-full lg:w-auto">
+                View Details
+                <i class="fa-solid fa-arrow-right text-sm -rotate-45 bg-green-light text-black rounded-full h-6 w-6 pt-0.5"></i>
+            </a>
+            </div>
+        </div>
+        </header>
 
+        <!-- Main Section -->
+        <main></main>
 
-
-
-
-
+        <!-- Footer section -->
+        <footer></footer>
     </body>
 </html>
